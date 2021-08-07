@@ -82,3 +82,31 @@
 .linkBtn2:hover, .linkBtn2:active {
     background-color: #036323;
 }
+
+.linkBtn3:link, .linkBtn3:visited {
+    background-color: #178800;
+    color: white;
+    padding: 4px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.linkBtn3:hover, .linkBtn3:active {
+    background-color: #116401;
+}
+
+.linkBtn4:link, .linkBtn4:visited {
+    background-color: #9b0101;
+    color: white;
+    padding: 4px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.linkBtn4:hover, .linkBtn4:active {
+    background-color: #700202;
+}

@@ -56,7 +56,7 @@ include "../../controllers/BloggerProfileController.php";
                 </div>
                 <div style="width: calc(75%); float: right; overflow-y:scroll">
                     <center>
-                        <table class="table1">
+                        <table class="table2">
                             <thead>
                                 <th>#</th>
                                 <th>Title</th>

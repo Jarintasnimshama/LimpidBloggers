@@ -63,8 +63,8 @@ function loadBloggersPostsMyPanel()
             $content .=        '<td>'.$data["bookmark_count"].'</td>';
             $content .=        '<td align="middle">';
             $content .=                '<a class="linkBtn1" href="#'.$data["blog_id"].'">View Blog</a>&nbsp;';
-            $content .=                '<a class="linkBtn1" href="#'.$data["blog_id"].'">Update</a>&nbsp';
-            $content .=                '<a class="linkBtn1" href="#'.$data["blog_id"].'">Delete</a>';
+            $content .=                '<a class="linkBtn3" href="#'.$data["blog_id"].'">Update</a>&nbsp';
+            $content .=                '<a class="linkBtn4" href="#'.$data["blog_id"].'">Delete</a>';
             $content .=        '</td>';
             $content .='</tr>';	
             $Sl += 1;
