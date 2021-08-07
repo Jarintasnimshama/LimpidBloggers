@@ -1,0 +1,66 @@
+.btnLogin {
+    width: 95%;
+    background-color: #2c2eaf;
+    color: white;
+    padding: 10px 13px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration-style: solid;
+    font-family: consolas;
+    font-size: medium;
+}
+  
+.btnLogin:hover {
+    background-color: #222480;
+}
+
+.btnReg {
+    width: 95%;
+    background-color: #15ad01;
+    color: white;
+    padding: 10px 13px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration-style: solid;
+    font-family: consolas;
+    font-size: medium;
+}
+  
+.btnReg:hover {
+    background-color: #159603;
+}
+
+.linkBtn1:link, .linkBtn1:visited {
+    background-color: #05968a;
+    color: white;
+    padding: 4px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.linkBtn1:hover, .linkBtn1:active {
+    background-color: #047e74;
+}
+
+.linkBtn2:link, .linkBtn2:visited {
+    background-color: #027529;
+    width: calc(25%);
+    color: white;
+    padding: 12px 16px;
+    text-align: center;
+    font-size: large;
+    font-weight: bolder;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.linkBtn2:hover, .linkBtn2:active {
+    background-color: #036323;
+}
