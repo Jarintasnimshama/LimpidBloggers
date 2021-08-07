@@ -151,6 +151,23 @@ function getBloggersByRegistarationStatus($data)
 	}
 }
 
+function updatePassword($data)
+{
+	$query = "UPDATE `logins` SET `password`='".$data["password"]."' WHERE `id` = '".$data["id"]."'";
+	
+	try
+	{
+		execute($query);
+		return true;
+	}
+	
+	catch(Exception $e)
+	{
+		throw $e->getMessage();
+		return false;
+	}	
+}
+
 function deleteLogin($data)
 {
 	$query = "DELETE FROM `logins` WHERE `id` = '$data';";

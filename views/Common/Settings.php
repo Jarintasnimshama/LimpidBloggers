@@ -17,6 +17,7 @@ include "../../controllers/SettingsController.php";
         <link rel="stylesheet" href="http://localhost/LimpidBloggers/assets/css/tables.css">
 
         <!-- Adding External JS -->
+        <script src="http://localhost/LimpidBloggers/assets/js/SettingsJS.js"></script>
     </head>
 
     <body>
@@ -43,11 +44,11 @@ include "../../controllers/SettingsController.php";
                         <div class="changepassDiv">
                             <br>
                             <input type="password" name="oldpasswordTB" id="oldpasswordTB" class="inputText1" placeholder="Old Password">
-                            <input type="password" name="newpasswordTB" id="passwordTB" class="inputText1" placeholder="New Password">
-                            <input type="password" name="conpasswordTB" id="passwordTB" class="inputText1" placeholder="Confirm New Password">
+                            <input type="password" name="newpasswordTB" id="newpasswordTB" class="inputText1" placeholder="New Password">
+                            <input type="password" name="conpasswordTB" id="conpasswordTB" class="inputText1" placeholder="Confirm New Password">
                             <span class="error"><?php echo $msg; ?></span>
                             <br>
-                            <button type="submit" name="proceedBTN" id="proceedBTN" class="btnProceed" onclick=""><b>PROCEED</b></button>
+                            <button type="submit" name="proceedBTN" id="proceedBTN" class="btnProceed" onclick="return validateProceed()"><b>PROCEED</b></button>
                         </div>
                 </center>
             </div>
