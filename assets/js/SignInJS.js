@@ -8,25 +8,25 @@ function validateLogin()
 {
     var validate = true;
     var msg = "Error: ";
-    email = document.getElementById("emailTB").value;
-    password = document.getElementById("passwordTB").value;
+    var email = document.getElementById("emailTB").value;
+    var password = document.getElementById("passwordTB").value;
 
     if(email.trim().length < 1)
     {
-        msg += "\nEmail Required";
+        msg += "\nEmail Required.";
         validate = false;
     }
     else
     {
         if(!validateEmail(email))
         {
-            msg += "\nInvalid Email";
+            msg += "\nInvalid Email.";
             validate = false;
         }
     }
     if(password.trim().length < 1)
     {
-        msg += "\nPassword Required";
+        msg += "\nPassword Required.";
         validate = false;
     }
 
