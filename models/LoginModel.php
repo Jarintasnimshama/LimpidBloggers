@@ -127,7 +127,7 @@ function getBloggersByRegistarationStatus($data)
 	$result = null;
 	try
 	{
-		$query = "SELECT logins.*, bloggers.id AS blogger_id, bloggers.name, bloggers.gender FROM `logins` ";
+		$query = "SELECT logins.*, bloggers.id AS blogger_id, bloggers.name, bloggers.gender, bloggers.contact FROM `logins` ";
 		$query .= "INNER JOIN `bloggers` ON logins.id = bloggers.login_id ";
 		$query .= "WHERE logins.usertype_id = 3 AND logins.regstatus_id = $data;";
 	

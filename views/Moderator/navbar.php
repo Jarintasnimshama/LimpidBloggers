@@ -12,7 +12,7 @@
     </div>
   </li>
   <li class="navitem"><a href="http://localhost/LimpidBloggers/views/Common/Blogs.php">Blogs</a></li>
-  <li class="navitem"><a href="#">Bloggers Community</a></li>
+  <li class="navitem"><a href="http://localhost/LimpidBloggers/views/Common/Community.php">Bloggers Community</a></li>
   <!-- /Common Part -->
 
   <!-- ADD MODERATOR PAGES LINK HERE -->
