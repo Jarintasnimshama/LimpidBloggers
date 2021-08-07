@@ -9,7 +9,7 @@ function getUser($data)
 	{
 		$query = "SELECT logins.*, usertypes.type as usertype, registrationstatus.status as regstatus FROM `logins` ";
 		$query .= "INNER JOIN `usertypes` ON logins.usertype_id = usertypes.id ";
-		$query .= "INNER JOIN `registrationstatus`ON logins.regstatus_id = registrationstatus.id ";
+		$query .= "INNER JOIN `registrationstatus` ON logins.regstatus_id = registrationstatus.id ";
 		$query .= "WHERE `email`='".$data["email"]."' AND `password`='".$data["password"]."';";
 	
 		$result=get($query);
@@ -121,11 +121,38 @@ function insertLogin($data)
 	}	
 }
 
-function deleteLogin($data)
+function getBloggersByRegistarationStatus($data)
 {
 	$result=array();
 	$result = null;
+	try
+	{
+		$query = "SELECT logins.*, bloggers.id AS blogger_id, bloggers.name, bloggers.gender FROM `logins` ";
+		$query .= "INNER JOIN `bloggers` ON logins.id = bloggers.login_id ";
+		$query .= "WHERE logins.usertype_id = 3 AND logins.regstatus_id = $data;";
+	
+		$result=get($query);
+		
+		if($result != null)
+		{
+			return $result;
+		}
+		
+		else
+		{
+			return $result;
+		}
+	}
+	
+	catch(Exception $e)
+	{
+		throw $e->getMessage();
+		return $result;
+	}
+}
 
+function deleteLogin($data)
+{
 	$query = "DELETE FROM `logins` WHERE `id` = '$data';";
 	
 	try

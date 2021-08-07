@@ -29,6 +29,38 @@ function getBloggerByLoginID($data)
 	}
 }
 
+function getBloggersInfoAlongBlogsByBloggerID($data)
+{
+	$result=array();
+	$result = null;
+	try
+	{
+		$query = "SELECT bloggers.*, logins.email AS email, blogs.id AS blog_id, blogs.title, blogs.content, blogs.post_time, blogs.comment_count, blogs.bookmark_count, blogstatus.status AS blog_status FROM `bloggers` ";
+		$query .= "LEFT JOIN `logins` ON bloggers.login_id = logins.id ";
+		$query .= "LEFT JOIN `blogs` ON bloggers.id = blogs.blogged_by ";
+		$query .= "LEFT JOIN `blogstatus` ON blogs.blogstatus_id = blogstatus.id ";
+		$query .= "WHERE bloggers.id = $data;";
+	
+		$result=get($query);
+		
+		if($result != null)
+		{
+			return $result;
+		}
+		
+		else
+		{
+			return $result;
+		}
+	}
+	
+	catch(Exception $e)
+	{
+		throw $e->getMessage();
+		return $result;
+	}
+}
+
 function insertBlogger($data)
 {
 	$query = "INSERT INTO `bloggers`(`name`, `contact`, `blood_group`, `gender`, `birth_date`, `login_id`) VALUES ('".$data['name']."','+880".$data['contact']."','".$data['blood_group']."','".$data['gender']."','".$data['birth_date']."','".$data['login_id']."');";
