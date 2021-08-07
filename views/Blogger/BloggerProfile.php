@@ -53,6 +53,14 @@ include "../../controllers/BloggerProfileController.php";
                     <?php echo $allData[0]["blood_group"]; ?>
                     <br>
                     Date of Birth: <?php echo $allData[0]["birth_date"]; ?>
+                    <br>
+                    <br>
+                    <?php
+                    if($_SESSION['loginInfo']['usertype_id'] == 3 && unserialize($_COOKIE['userInfo'])['id'] == $id)
+                    {
+                        echo '<a class="linkBtn3" href="#">Edit Profile</a>';
+                    }
+                    ?>
                 </div>
                 <div style="width: calc(75%); float: right; overflow-y:scroll">
                     <center>

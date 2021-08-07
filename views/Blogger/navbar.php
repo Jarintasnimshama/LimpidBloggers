@@ -17,6 +17,6 @@
 
   <!-- ADD BLOGGER PAGES LINK HERE -->
   <li class="navitem"><a href="#">Bookmarks</a></li>
-  
+  <li class="navitem"><a href="http://localhost/LimpidBloggers/views/Blogger/BloggerProfile.php?id=<?php echo unserialize($_COOKIE["userInfo"])["id"]; ?>">My Blogger Profile</a></li>
   <!-- /ADD BLOGGER PAGES LINK HERE -->
 </ul>
