@@ -88,7 +88,7 @@ if(!isset($_SESSION['loginInfo']) && !isset($_COOKIE['userInfo']))
         }
         else
         {
-            $msg = "Please Fill-up Correctly.";
+            $msg = "Please Fill-up Correctly."; 
         }
     }
 }
