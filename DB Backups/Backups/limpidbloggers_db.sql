@@ -42,7 +42,7 @@ CREATE TABLE `bloggers` (
 --
 
 INSERT INTO `bloggers` (`id`, `name`, `contact`, `blood_group`, `gender`, `birth_date`, `login_id`) VALUES
-(1, 'Jarin Tasnim Shama', '01515222222', 'O+', 'Female', '1998-04-13', 3);
+(1, 'Jarin Tasnim Shama', '+8801515222222', 'O+', 'Female', '1998-04-13', 3);
 
 -- --------------------------------------------------------
 
@@ -150,8 +150,8 @@ CREATE TABLE `employees` (
 --
 
 INSERT INTO `employees` (`id`, `name`, `contact`, `blood_group`, `gender`, `birth_date`, `salary`, `login_id`) VALUES
-(1, 'Shihab Ahmed', '01515000000', 'A+', 'Male', '1998-07-20', 100000.00, 1),
-(2, 'Sharaban Tahura Ethen', '01515111111', 'B+', 'Female', '1996-10-30', 80000.00, 2);
+(1, 'Shihab Ahmed', '+8801515000000', 'A+', 'Male', '1998-07-20', 100000.00, 1),
+(2, 'Sharaban Tahura Ethen', '+8801515111111', 'B+', 'Female', '1996-10-30', 80000.00, 2);
 
 -- --------------------------------------------------------
 

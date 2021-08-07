@@ -112,6 +112,6 @@ INSERT INTO `Categories`(category) VALUES ('Scientific');
 
 INSERT INTO `logins` (`id`, `email`, `password`, `usertype_id`, `regstatus_id`) VALUES (NULL, 'shihab@gmail.com', '12345', '1', '3'), (NULL, 'ethen@gmail.com', '12345', '2', '3'), (NULL, 'shama@gmail.com', '12345', '3', '3');
 
-INSERT INTO `employees` (`id`, `name`, `contact`, `blood_group`, `gender`, `birth_date`, `salary`, `login_id`) VALUES (NULL, 'Shihab Ahmed', '01515000000', 'A+', 'Male', '1998-07-20', '100000', '1'), (NULL, 'Sharaban Tahura Ethen', '01515111111', 'B+', 'Female', '1996-10-30', '80000', '2');
+INSERT INTO `employees` (`id`, `name`, `contact`, `blood_group`, `gender`, `birth_date`, `salary`, `login_id`) VALUES (NULL, 'Shihab Ahmed', '+8801515000000', 'A+', 'Male', '1998-07-20', '100000', '1'), (NULL, 'Sharaban Tahura Ethen', '+8801515111111', 'B+', 'Female', '1996-10-30', '80000', '2');
 
-INSERT INTO `bloggers` (`id`, `name`, `contact`, `blood_group`, `gender`, `birth_date`, `login_id`) VALUES (NULL, 'Jarin Tasnim Shama', '01515222222', 'O+', 'Female', '1998-04-13', '3');
+INSERT INTO `bloggers` (`id`, `name`, `contact`, `blood_group`, `gender`, `birth_date`, `login_id`) VALUES (NULL, 'Jarin Tasnim Shama', '+8801515222222', 'O+', 'Female', '1998-04-13', '3');

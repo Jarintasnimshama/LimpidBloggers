@@ -17,6 +17,7 @@ include "../../controllers/SignUpController.php";
         <link rel="stylesheet" href="http://localhost/LimpidBloggers/assets/css/tables.css">
 
         <!-- Adding External JS -->
+        <script src="http://localhost/LimpidBloggers/assets/js/SignUpJS.js"></script>
     </head>
 
     <body>
@@ -57,7 +58,7 @@ include "../../controllers/SignUpController.php";
                         <span class="success"><?php echo $success; ?></span>
                         <br>
                         <span class="message1">Already have an account? <a class="ancorText" href="http://localhost/LimpidBloggers/views/Common/SignIn.php">Click Here</a><span>
-                        <button type="submit" name="registerBTN" id="registerBTN" class="btnReg"><b>REGISTER</b></button>
+                        <button type="submit" name="registerBTN" id="registerBTN" class="btnReg" onclick="return validateRegistration()"><b>REGISTER</b></button>
                     </div>
                </center>
             </div>
