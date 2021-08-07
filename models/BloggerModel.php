@@ -35,10 +35,11 @@ function getBloggersInfoAlongBlogsByBloggerID($data)
 	$result = null;
 	try
 	{
-		$query = "SELECT bloggers.*, logins.email AS email, blogs.id AS blog_id, blogs.title, blogs.content, blogs.post_time, blogs.comment_count, blogs.bookmark_count, blogstatus.status AS blog_status FROM `bloggers` ";
+		$query = "SELECT bloggers.*, logins.email AS email, blogs.id AS blog_id, blogs.title, blogs.content, blogs.post_time, blogs.comment_count, blogs.bookmark_count, blogstatus.status AS blog_status, categories.category FROM `bloggers` ";
 		$query .= "LEFT JOIN `logins` ON bloggers.login_id = logins.id ";
 		$query .= "LEFT JOIN `blogs` ON bloggers.id = blogs.blogged_by ";
 		$query .= "LEFT JOIN `blogstatus` ON blogs.blogstatus_id = blogstatus.id ";
+		$query .= "LEFT JOIN `categories` ON blogs.category_id = categories.id ";
 		$query .= "WHERE bloggers.id = $data;";
 	
 		$result=get($query);

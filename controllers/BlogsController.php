@@ -7,14 +7,14 @@ function loadApprovedBlogs()
 {
     $blogs = getAllBlogsByBlogStatus(3);
     $content = "";
-    if(sizeof($blogs) > 1 && $blogs != null)
+    if(sizeof($blogs) > 0 && $blogs != null)
     {
         foreach($blogs as $data)
         {
             $content .= '<center>';
             $content .=        '<div class="blogsDiv">';
             $content .=            '<h1 class="blogTitle">'.$data["title"].'</h1>';
-            $content .=            '<p class="blogSub">By- <a class="ancorText2" href="#?'.$data["blogged_by"].'">'.$data["blogger_name"].'</a></p>';
+            $content .=            '<p class="blogSub">By- <a class="ancorText2" href="http://localhost/LimpidBloggers/views/Blogger/BloggerProfile.php?id='.$data["blogged_by"].'">'.$data["blogger_name"].'</a></p>';
             $content .=            '<span class="blogContent">'.substr($data["content"], 0, 550).'....</span>';
             $content .=            '<br>';
             $content .=            '<center>';

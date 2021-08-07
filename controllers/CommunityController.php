@@ -8,7 +8,7 @@ function loadActiveBloggers()
     $bloggers = getBloggersByRegistarationStatus(3);
     $content = "";
     $Sl = 1;
-    if(sizeof($bloggers) > 1 && $bloggers != null)
+    if(sizeof($bloggers) > 0 && $bloggers != null)
     {
         foreach($bloggers as $data)
         {
@@ -18,7 +18,7 @@ function loadActiveBloggers()
             $content .=        '<td>'.$data["email"].'</td>';
             $content .=        '<td>'.$data["contact"].'</td>';
             $content .=        '<td>'.$data["gender"].'</td>';
-            $content .=        '<td align="middle"><a class="linkBtn1" href="#'.$data["blogger_id"].'">View Profile</a></td>';
+            $content .=        '<td align="middle"><a class="linkBtn1" href="http://localhost/LimpidBloggers/views/Blogger/BloggerProfile.php?id='.$data["blogger_id"].'">View Profile</a></td>';
             $content .='</tr>';	
             $Sl += 1;
         }
