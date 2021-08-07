@@ -5,6 +5,8 @@ require_once '../../models/BloggerModel.php';
 
 $id = $_GET['id'];
 
+$urlValidate = true;
+
 $allData = getBloggersInfoAlongBlogsByBloggerID($id);
 
 function loadBloggersPosts()
@@ -82,11 +84,20 @@ if(isset($_SESSION['loginInfo']) && isset($_COOKIE['userInfo']))
 {
     if($allData == null)
     {
+        $urlValidate = false;
+    }
+    if (!isset($_GET['id'])) 
+    {
+        $urlValidate = false;
+    }
+
+    if(!$urlValidate)
+    {
         header("Location: http://localhost/LimpidBloggers/views/Common/SignIn.php");
     }
     else
     {
-        // echo serialize($allData);
+
     }
 }
 else
