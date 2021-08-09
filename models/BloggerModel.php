@@ -29,6 +29,34 @@ function getBloggerByLoginID($data)
 	}
 }
 
+function getBloggerByID($data)
+{
+	$result=array();
+	$result = null;
+	try
+	{
+		$query= "SELECT bloggers.*, logins.email FROM `bloggers` INNER JOIN `logins` ON bloggers.login_id = logins.id WHERE bloggers.id = '$data';";
+	
+		$result=get($query);
+		
+		if($result != null)
+		{
+			return $result;
+		}
+		
+		else
+		{
+			return $result;
+		}
+	}
+	
+	catch(Exception $e)
+	{
+		throw $e->getMessage();
+		return $result;
+	}
+}
+
 function getBloggersInfoAlongBlogsByBloggerID($data)
 {
 	$result=array();

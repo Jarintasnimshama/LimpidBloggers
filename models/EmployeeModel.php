@@ -28,4 +28,32 @@ function getEmployeeByLoginID($data)
 		return $result;
 	}
 }
+
+function getEmployeeByID($data)
+{
+	$result=array();
+	$result = null;
+	try
+	{
+		$query= "SELECT employees.*, logins.email, usertypes.type FROM `employees` INNER JOIN `logins` ON employees.login_id = logins.id INNER JOIN `usertypes` ON logins.usertype_id = usertypes.id WHERE employees.id = '$data';";
+	
+		$result=get($query);
+		
+		if($result != null)
+		{
+			return $result;
+		}
+		
+		else
+		{
+			return $result;
+		}
+	}
+	
+	catch(Exception $e)
+	{
+		throw $e->getMessage();
+		return $result;
+	}
+}
 ?>
