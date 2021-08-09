@@ -37,8 +37,8 @@ include "../../controllers/SignUpController.php";
                         <select id="gender" name="gender" class="inputText1" style="width: calc(47.5%);">
                             <option value="">Select Gender</option>
                             <option value="Male">Male</option>
-                            <option value="Male">Female</option>
-                            <option value="Male">Other</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
                         </select>
                         <select id="bloodgroup" name="bloodgroup" class="inputText1" style="width: calc(47.5%);">
                             <option value="">Select Bloog Group</option>
