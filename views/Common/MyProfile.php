@@ -17,7 +17,7 @@ include "../../controllers/MyProfileController.php";
         <link rel="stylesheet" href="http://localhost/LimpidBloggers/assets/css/tables.css">
 
         <!-- Adding External JS -->
-        <script src="http://localhost/LimpidBloggers/assets/js/SignUpJS.js"></script>
+        <script src="http://localhost/LimpidBloggers/assets/js/MyProfileJS.js"></script>
     </head>
 
     <body>
