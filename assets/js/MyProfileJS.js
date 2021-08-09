@@ -8,3 +8,8 @@ function enableEdit()
     document.getElementById("updateBTN").removeAttribute("hidden"); 
     document.getElementById("enableBTN").setAttribute("hidden", "hidden");
 }
+
+function validateUpdate()
+{
+    
+}
