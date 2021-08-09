@@ -6,7 +6,7 @@
   <li class="navitem dropdown" style="padding-right: 5vw;">
     <a href="javascript:void(0)" class="dropbtn"><span>&#9776;</span></a>
     <div class="dropdown-content">
-      <a href="#">Profile</a>
+      <a href="http://localhost/LimpidBloggers/views/Common/MyProfile.php">Profile</a>
       <a href="http://localhost/LimpidBloggers/views/Common/Settings.php">Settings</a>
       <a href="http://localhost/LimpidBloggers/controllers/api/Logout.php" style="background-color: red; color: antiquewhite">Logout</a>
     </div>
