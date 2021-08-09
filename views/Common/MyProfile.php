@@ -75,8 +75,8 @@ include "../../controllers/MyProfileController.php";
                         <span class="error"><?php //echo $msg; ?></span>
                         <span class="success"><?php //echo $success; ?></span>
                         <br>
-                        <button type="button" name="enableBTN" id="enableBTN" class="btnEn" onclick=""><b>ENABLE UPDATE</b></button>
-                        <button type="submit" name="updateBTN" id="updateBTN" class="btnReg" onclick="" hidden><b>UPDATE INFO</b></button>
+                        <button type="button" name="enableBTN" id="enableBTN" class="btnEn" onclick="enableEdit();"><b>ENABLE UPDATE</b></button>
+                        <button type="submit" name="updateBTN" id="updateBTN" class="btnReg" onclick="" hidden><b>CONFIRM UPDATE</b></button>
                     </div>
                </center>
             </div>
