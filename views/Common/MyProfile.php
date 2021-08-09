@@ -47,6 +47,12 @@ include "../../controllers/MyProfileController.php";
                         <input type="text" class="inputText1" placeholder="Contact" value="+880" style="width: calc(15%);" readonly>
                         <input type="text" name="contactTB" id="contactTB" class="inputText1" placeholder="1XXXXXXXXX" value="" style="width: calc(80%);" readonly>
                         <input type="text" name="dateTB" id="dateTB" class="inputText1" value="" onfocus="(this.type='date')" onfocusout="(this.type='text')" placeholder="Date of Birth" readonly>
+                        <?php
+                        if($_SESSION['loginInfo']['usertype_id'] != 3)
+                        {
+                            echo '<input type="text" name="salaryTB" id="salaryTB" class="inputText1" placeholder="Salary" value="" readonly>';
+                        }
+                        ?>
                         <select id="gender" name="gender" class="inputText1" style="width: calc(47.5%);" disabled>
                             <option value="">Select Gender</option>
                             <option value="Male">Male</option>
@@ -65,12 +71,6 @@ include "../../controllers/MyProfileController.php";
                             <option value="O-">O-</option>
                         </select>
                         <input type="text" name="emailTB" id="emailTB" class="inputText1" placeholder="Email" value="" readonly>
-                        <?php
-                        if($_SESSION['loginInfo']['usertype_id'] != 3)
-                        {
-                            echo '<input type="text" name="salaryTB" id="salaryTB" class="inputText1" placeholder="Salary" value="" readonly>';
-                        }
-                        ?>
                         <span class="error"><?php //echo $msg; ?></span>
                         <span class="success"><?php //echo $success; ?></span>
                         <br>
