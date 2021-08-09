@@ -41,7 +41,7 @@ include "../../controllers/MyProfileController.php";
             <div class="remainDiv">
                 <div style="padding-top: 3vh;"></div>
                <center>
-                    <div class="infoDiv">
+                    <div class="<?php if($_SESSION['loginInfo']['usertype_id'] != 3){echo "infoDiv2";} else{ echo "infoDiv1"; } ?>">
                         <h1 class="loginHeader">My Information</h1>
                         <input type="text" name="nameTB" id="nameTB" class="inputText1" placeholder="Full Name" value="" readonly>
                         <input type="text" class="inputText1" placeholder="Contact" value="+880" style="width: calc(15%);" readonly>
@@ -51,6 +51,7 @@ include "../../controllers/MyProfileController.php";
                         if($_SESSION['loginInfo']['usertype_id'] != 3)
                         {
                             echo '<input type="text" name="salaryTB" id="salaryTB" class="inputText1" placeholder="Salary" value="" readonly>';
+                            echo '<input type="text" name="designTB" id="designTB" class="inputText1" placeholder="Designation" value="" readonly>';
                         }
                         ?>
                         <select id="gender" name="gender" class="inputText1" style="width: calc(47.5%);" disabled>
