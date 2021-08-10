@@ -63,6 +63,13 @@ include "../../controllers/BloggerProfileController.php";
                     ?>
                 </div>
                 <div style="width: calc(75%); float: right; overflow-y:scroll">
+                   <?php 
+                        if($_SESSION['loginInfo']['usertype_id'] == 3 && unserialize($_COOKIE['userInfo'])['id'] == $id)
+                        {
+                            echo '<a class="linkBtn2" href="http://localhost/LimpidBloggers/views/Blogger/PostBlog.php">Post New Blog</a>';
+                        } 
+                   ?>
+                   <div style="padding-top: 2vh;"></div>
                     <center>
                         <table class="table2">
                             <thead>

@@ -42,7 +42,7 @@ include "../../controllers/BlogsController.php";
                    <?php 
                         if($_SESSION['loginInfo']['usertype_id'] == 3)
                         {
-                            echo '<a class="linkBtn2" href="#">Post New Blog</a>';
+                            echo '<a class="linkBtn2" href="http://localhost/LimpidBloggers/views/Blogger/PostBlog.php">Post New Blog</a>';
                         } 
                    ?>
                 </div>
