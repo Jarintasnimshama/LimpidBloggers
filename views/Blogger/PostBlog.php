@@ -4,7 +4,7 @@ include "../../controllers/PostBlogController.php";
 <!DOCTYPE html>
 <html>
     <head>
-        <title>LimpidBlogger | Profile</title>
+        <title>LimpidBlogger | Post Blog</title>
 
         <link rel="icon" href="http://localhost/LimpidBloggers/assets/image/Project Icon/LimpidBloggers.ico">
 
@@ -32,7 +32,14 @@ include "../../controllers/PostBlogController.php";
 
             <div class="remainDiv">
                 <div style="padding-top: 3vh;"></div>
-               
+                <input type="text" placeholder="Post Title" class="inputText1" name="titleTB" id="titleTB">
+                <select name="category"  id="category" class="inputText1">
+                    <option value="">Select Category</option>
+                </select>
+                <textarea class="textarea1" name="contentTB" id="contentTB" placeholder="Write Blog Here..."></textarea>
+                <!--  -->
+                <!--  -->
+                <button type="submit" class="btnPost" name="postBTN" id="postBTN">POST</button>
             </div>
         </form>
     </body>
