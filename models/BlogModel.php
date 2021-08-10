@@ -38,7 +38,7 @@ function getReadableBlog($id, $status)
 	$result = null;
 	try
 	{
-		$query = "SELECT blogs.*, categories.category as category, bloggers.name as blogger_name FROM `blogs` ";
+		$query = "SELECT blogs.*, categories.category as category, bloggers.name as blogger_name, bloggers.id as blogger_id FROM `blogs` ";
 		$query .= "INNER JOIN `categories` ON blogs.category_id = categories.id ";
 		$query .= "INNER JOIN `bloggers`ON blogs.blogged_by = bloggers.id ";
 		$query .= "WHERE blogs.`blogstatus_id`='$status' AND blogs.`id`='$id';";
@@ -69,7 +69,7 @@ function getBlogByID($data)
 	$result = null;
 	try
 	{
-		$query = "SELECT blogs.*, categories.category as category, bloggers.name as blogger_name FROM `blogs` ";
+		$query = "SELECT blogs.*, categories.category as category, bloggers.name as blogger_name, bloggers.id as blogger_id FROM `blogs` ";
 		$query .= "INNER JOIN `categories` ON blogs.category_id = categories.id ";
 		$query .= "INNER JOIN `bloggers`ON blogs.blogged_by = bloggers.id ";
 		$query .= "WHERE blogs.`id`='$data';";
