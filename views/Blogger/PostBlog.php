@@ -17,7 +17,7 @@ include "../../controllers/PostBlogController.php";
         <link rel="stylesheet" href="http://localhost/LimpidBloggers/assets/css/tables.css">
 
         <!-- Adding External JS -->
-        <script src="http://localhost/LimpidBloggers/assets/js/MyProfileJS.js"></script>
+        <script src="http://localhost/LimpidBloggers/assets/js/PostBlogJS.js"></script>
     </head>
 
     <body>
@@ -42,7 +42,7 @@ include "../../controllers/PostBlogController.php";
                 <span class="error"><?php echo $msg; ?></span>
                 <span class="success"><?php echo $success; ?></span>
                 <br>
-                <button type="submit" class="btnPost" name="postBTN" id="postBTN" onclick="">POST BLOG</button>
+                <button type="submit" class="btnPost" name="postBTN" id="postBTN" onclick="return validatePost();">POST BLOG</button>
             </div>
         </form>
     </body>
