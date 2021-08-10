@@ -110,6 +110,6 @@ if(isset($_SESSION['loginInfo']) && isset($_COOKIE['userInfo']))
 }
 else
 {
-    header("Location: http://localhost/LimpidBloggers/views/Common/SignIn.php");
+    header("Location:https://localhost/LimpidBloggers/controllers/api/Logout.php");
 }
 ?>

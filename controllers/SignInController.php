@@ -94,6 +94,6 @@ if(!isset($_SESSION['loginInfo']) && !isset($_COOKIE['userInfo']))
 }
 else
 {
-    header("Location: http://localhost/LimpidBloggers/views/Common/Blogs.php");
+    header("Location: https://localhost/LimpidBloggers/controllers/api/Logout.php");
 }
 ?>

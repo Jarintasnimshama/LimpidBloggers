@@ -41,7 +41,13 @@ include "../../controllers/BlogController.php";
                 <div style="padding-top: 1vh;"></div>
                 <?php
                     loadBlog($id);
+
+                    if($_SESSION['loginInfo']['usertype_id'] == 3)
+                    {
+                        include "../Blogger/CommentSection.php";
+                    }
                 ?>
+                
             </div>
         </form>
     </body>
