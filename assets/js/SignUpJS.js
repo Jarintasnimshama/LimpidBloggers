@@ -4,6 +4,11 @@ function validateEmail(email)
     return re.test(String(email).toLowerCase());
 }
 
+function isNumeric(value) 
+{
+    return /^-?\d+$/.test(value);
+}
+
 function validateRegistration()
 {
     var validate = true;
@@ -27,6 +32,12 @@ function validateRegistration()
     if(contact.trim().length != 10)
     {
         msg += "\nInvalid Contact. 10 digits Required.";
+        validate = false;
+    }
+
+    if(!isNumeric(contact))
+    {
+        msg += "\nInvalid Contact. 10 digits Required. Only Numeric Values Required.";
         validate = false;
     }
 
