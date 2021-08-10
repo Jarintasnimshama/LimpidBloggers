@@ -46,6 +46,7 @@ function validateRegistration()
     {
         $validate = false;
     }
+    // 
 
     return $validate;
 }

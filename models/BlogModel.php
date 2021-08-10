@@ -32,4 +32,23 @@ function getAllBlogsByBlogStatus($data)
 	}
 }
 
+function insertBlog($data)
+{
+
+	$query = "INSERT INTO `blogs`(`title`, `content`, `category_id`, `blogstatus_id`, `blogged_by`) VALUES ('".$data['title']."','".$data['content']."','".$data['category_id']."','".$data['blogstatus_id']."','".$data['blogged_by']."');";
+	
+	try
+	{
+		execute($query);
+
+		return true;
+	}
+	
+	catch(Exception $e)
+	{
+		throw $e->getMessage();
+		return false;
+	}	
+}
+
 ?>

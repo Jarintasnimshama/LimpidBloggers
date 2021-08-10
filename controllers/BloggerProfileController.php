@@ -20,17 +20,25 @@ function loadBloggersPosts()
         {
             foreach($allData as $data)
             {
-                $content .= '<tr>';
-                $content .=        '<td>'.$Sl.'</td>';
-                $content .=        '<td>'.$data["title"].'</td>';
-                $content .=        '<td>'.$data["category"].'</td>';
-                $content .=        '<td>'.$data["post_time"].'</td>';
-                $content .=        '<td>'.$data["blog_status"].'</td>';
-                $content .=        '<td>'.$data["comment_count"].'</td>';
-                $content .=        '<td>'.$data["bookmark_count"].'</td>';
-                $content .=        '<td align="middle"><a class="linkBtn1" href="#'.$data["blog_id"].'">View Blog</a></td>';
-                $content .='</tr>';	
-                $Sl += 1;
+                if($allData[0]['blog_status'] == "Approved")
+                {
+                    $content .= '<tr>';
+                    $content .=        '<td>'.$Sl.'</td>';
+                    $content .=        '<td>'.$data["title"].'</td>';
+                    $content .=        '<td>'.$data["category"].'</td>';
+                    $content .=        '<td>'.$data["post_time"].'</td>';
+                    $content .=        '<td>'.$data["blog_status"].'</td>';
+                    $content .=        '<td>'.$data["comment_count"].'</td>';
+                    $content .=        '<td>'.$data["bookmark_count"].'</td>';
+                    $content .=        '<td align="middle"><a class="linkBtn1" href="#'.$data["blog_id"].'">View Blog</a></td>';
+                    $content .='</tr>';	
+                    $Sl += 1;
+                }
+            }
+
+            if($Sl < 2)
+            {
+                $content .= '<tr><td colspan="6" align="middle"><h2 class="error2">NO BLOGS FOUND.</h2></td></tr>';
             }
         }
         else

@@ -35,11 +35,14 @@ include "../../controllers/PostBlogController.php";
                 <input type="text" placeholder="Post Title" class="inputText1" name="titleTB" id="titleTB">
                 <select name="category"  id="category" class="inputText1">
                     <option value="">Select Category</option>
+                    <?php renderCategories(); ?>
                 </select>
                 <textarea class="textarea1" name="contentTB" id="contentTB" placeholder="Write Blog Here..."></textarea>
-                <!--  -->
-                <!--  -->
-                <button type="submit" class="btnPost" name="postBTN" id="postBTN">POST</button>
+                <br>
+                <span class="error"><?php echo $msg; ?></span>
+                <span class="success"><?php echo $success; ?></span>
+                <br>
+                <button type="submit" class="btnPost" name="postBTN" id="postBTN" onclick="">POST BLOG</button>
             </div>
         </form>
     </body>
