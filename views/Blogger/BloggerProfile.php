@@ -44,15 +44,15 @@ include "../../controllers/BloggerProfileController.php";
                 <div style="width: calc(25%); float: left; text-align:center;">
                     <span class="blogTitle"><?php echo $allData[0]["name"]; ?></span>
                     <br>
-                    <a href="mailto:<?php echo $allData[0]["email"]; ?>"><?php echo $allData[0]["email"]; ?></a>
+                    <b><i><a href="mailto:<?php echo $allData[0]["email"]; ?>"><?php echo $allData[0]["email"]; ?></a></i></b>
                     <br>
-                    Contact: <a href="tel:<?php echo $allData[0]["contact"]; ?>"><?php echo $allData[0]["contact"]; ?></a>
+                    Contact: <b><i><a href="tel:<?php echo $allData[0]["contact"]; ?>"><?php echo $allData[0]["contact"]; ?></a></i></b>
                     <br>
-                    <?php echo $allData[0]["gender"]; ?>
+                    Gender: <b><i><?php echo $allData[0]["gender"]; ?></i></b>
                     <br>
-                    <?php echo $allData[0]["blood_group"]; ?>
+                    Blood Group: <b><i><?php echo $allData[0]["blood_group"]; ?></i></b>
                     <br>
-                    Date of Birth: <?php echo $allData[0]["birth_date"]; ?>
+                    Date of Birth: <b><i><?php echo $allData[0]["birth_date"]; ?></i></b>
                     <br>
                     <br>
                     <?php
