@@ -58,7 +58,7 @@ include "../../controllers/BloggerProfileController.php";
                     <?php
                     if($_SESSION['loginInfo']['usertype_id'] == 3 && unserialize($_COOKIE['userInfo'])['id'] == $id)
                     {
-                        echo '<a class="linkBtn3" href="#">Edit Profile</a>';
+                        echo '<a class="linkBtn3" href="http://localhost/LimpidBloggers/views/Common/MyProfile.php">Edit Profile</a>';
                     }
                     ?>
                 </div>

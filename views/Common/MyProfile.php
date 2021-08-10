@@ -45,7 +45,7 @@ include "../../controllers/MyProfileController.php";
                         <h1 class="loginHeader">My Information</h1>
                         <input type="text" name="nameTB" id="nameTB" class="inputText1" placeholder="Full Name" value="<?php echo $data["name"]; ?>" readonly>
                         <input type="text" class="inputText1" placeholder="Contact" value="+880" style="width: calc(15%);" readonly>
-                        <input type="text" name="contactTB" id="contactTB" class="inputText1" placeholder="1XXXXXXXXX" value="<?php echo substr($data["contact"], 4); ?>" style="width: calc(80%);" readonly>
+                        <input type="text" name="contactTB" id="contactTB" class="inputText1" placeholder="1XXXXXXXXX" value="<?php echo $data["contact"]; ?>" style="width: calc(80%);" readonly>
                         <input type="text" name="dateTB" id="dateTB" class="inputText1" value="<?php echo $data["birth_date"]; ?>" onfocus="(this.type='date')" onfocusout="(this.type='text')" placeholder="Date of Birth" readonly>
                         <?php
                         if($_SESSION['loginInfo']['usertype_id'] != 3)
@@ -72,8 +72,8 @@ include "../../controllers/MyProfileController.php";
                             <option value="O-" <?php if($data["blood_group"]=="O-"){echo "selected";} ?>>O-</option>
                         </select>
                         <input type="text" name="emailTB" id="emailTB" class="inputText1" placeholder="Email" value="<?php echo $data["email"]; ?>" readonly>
-                        <span class="error"><?php //echo $msg; ?></span>
-                        <span class="success"><?php //echo $success; ?></span>
+                        <span class="error"><?php echo $msg; ?></span>
+                        <span class="success"><?php echo $success; ?></span>
                         <br>
                         <button type="button" name="enableBTN" id="enableBTN" class="btnEn" onclick="enableEdit();"><b>ENABLE UPDATE</b></button>
                         <button type="submit" name="updateBTN" id="updateBTN" class="btnReg" onclick="" hidden><b>CONFIRM UPDATE</b></button>

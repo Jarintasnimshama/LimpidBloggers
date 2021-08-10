@@ -106,4 +106,21 @@ function insertBlogger($data)
 		return false;
 	}	
 }
+
+function updateBloggerOwnProfile($data)
+{
+	$query = "UPDATE `bloggers` SET `name`='".$data["name"]."', `contact`='".$data["contact"]."', `blood_group`='".$data["blood_group"]."', `gender`='".$data["gender"]."', `birth_date`='".$data["birth_date"]."' WHERE `id` = '".$data["id"]."'";
+	
+	try
+	{
+		execute($query);
+		return true;
+	}
+	
+	catch(Exception $e)
+	{
+		throw $e->getMessage();
+		return false;
+	}	
+}
 ?>
