@@ -28,6 +28,8 @@ if(isset($_SESSION['loginInfo']) && isset($_COOKIE['userInfo']) && $_SESSION['lo
     {
         if($allData[0]["blogged_by"] == unserialize($_COOKIE['userInfo'])['id'])
         {
+            deleteCommentForBlogDelete($id);
+            deleteBookmarkForBlogDelete($id);
             deleteBlog($id);
             header("Location: http://localhost/LimpidBloggers/views/Blogger/BloggerProfile.php?id=".unserialize($_COOKIE["userInfo"])["id"]);
         }

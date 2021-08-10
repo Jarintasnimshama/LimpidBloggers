@@ -29,4 +29,20 @@ function getCheckBookMark($blog_id, $bookmarked_by)
 	}
 }
 
+function deleteBookmarkForBlogDelete($data)
+{
+
+	$query = "DELETE FROM `blogs` WHERE `blog_id`= $data";
+	
+	try
+	{
+		execute($query);
+	}
+	
+	catch(Exception $e)
+	{
+		throw $e->getMessage();
+	}	
+}
+
 ?>
