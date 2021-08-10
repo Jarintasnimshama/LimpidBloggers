@@ -30,7 +30,7 @@ function loadBloggersPosts()
                     $content .=        '<td>'.$data["blog_status"].'</td>';
                     $content .=        '<td>'.$data["comment_count"].'</td>';
                     $content .=        '<td>'.$data["bookmark_count"].'</td>';
-                    $content .=        '<td align="middle"><a class="linkBtn1" href="#'.$data["blog_id"].'">View Blog</a></td>';
+                    $content .=        '<td align="middle"><a class="linkBtn1" href="http://localhost/LimpidBloggers/views/Common/Blog.php?id='.$data["blog_id"].'">View Blog</a></td>';
                     $content .='</tr>';	
                     $Sl += 1;
                 }
@@ -72,7 +72,7 @@ function loadBloggersPostsMyPanel()
             $content .=        '<td>'.$data["comment_count"].'</td>';
             $content .=        '<td>'.$data["bookmark_count"].'</td>';
             $content .=        '<td align="middle">';
-            $content .=                '<a class="linkBtn1" href="#'.$data["blog_id"].'">View Blog</a>&nbsp;';
+            $content .=                '<a class="linkBtn1" href="http://localhost/LimpidBloggers/views/Common/Blog.php?id='.$data["blog_id"].'">View Blog</a>&nbsp;';
             $content .=                '<a class="linkBtn3" href="#'.$data["blog_id"].'">Update</a>&nbsp';
             $content .=                '<a class="linkBtn4" href="http://localhost/LimpidBloggers/controllers/api/DeleteMyBlog.php?id='.$data["blog_id"].'">Delete</a>';
             $content .=        '</td>';
