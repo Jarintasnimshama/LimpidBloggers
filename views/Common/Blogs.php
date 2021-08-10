@@ -46,23 +46,8 @@ include "../../controllers/BlogsController.php";
                         } 
                    ?>
                 </div>
-                <!-- <center>
-                    <div class="blogsDiv">
-                        <h1 class="blogTitle">Title</h1>
-                        <p class="blogSub">By- <a class="ancorText2" href="#">User Name</a></p>
-                        <span class="blogContent">yufyvjhvjv.....</span>
-                        <br>
-                        <center>
-                            <a class="linkBtn1" href="#">Read Full Blog</a>
-                        </center>
-                        <p class="blogTime">dd/mm/yy t</p>
-                    </div>
-                </center> -->
                 <?php
                     loadApprovedBlogs();
-                    // echo $_SESSION['loginInfo']['email'];
-                    // echo "<br>";
-                    // echo unserialize($_COOKIE['userInfo'])["name"];
                 ?>
             </div>
         </form>
