@@ -43,13 +43,13 @@ function loadBlog($id)
             if($_SESSION["loginInfo"]["usertype_id"]==3 && !$checkBook && $data["blogger_id"] != unserialize($_COOKIE["userInfo"])["id"])
             {
                 $content .=            '<center>';
-                $content .=                '<a class="linkBtn1" href="https://localhost/LimpidBloggers/views/Common/Blog.php?id='.$data["id"].'">ADD TO BOOKMARK</a>';
+                $content .=                '<button type="submit" id="bookmarkBTN" name="bookmarkBTN" class="btnBookmark" >ADD TO BOOKMARK</button>';
                 $content .=            '</center>';
             }
             if($_SESSION["loginInfo"]["usertype_id"]==3 && $checkBook && $data["blogger_id"] != unserialize($_COOKIE["userInfo"])["id"])
             {
                 $content .=            '<center>';
-                $content .=                '<a class="linkBtn5" href="#">BOOKMARKED</a>';
+                $content .=                '<a class="linkBtn5" href="#" disabled>BOOKMARKED</a>';
                 $content .=            '</center>';
             }
             $content .=            '<span class="blogContent" style="text-align: justify;">'.$data["content"].'</span>';
@@ -134,6 +134,17 @@ if(isset($_SESSION['loginInfo']) && isset($_COOKIE['userInfo']))
         else
         {
             $msg = "Write Comment First.";
+        }
+    }
+
+    if(isset($_POST["bookmarkBTN"]))
+    {
+        $dataBookmark = array("blog_id"=>$id, "bookmarked_by"=>unserialize($_COOKIE["userInfo"])["id"]);
+        $execution = insertBookmark($dataBookmark);
+
+        if($execution)
+        {
+            increaseBookmarkCount($id);
         }
     }
 }

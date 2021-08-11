@@ -128,4 +128,23 @@ function deleteBookmark($data)
 	}	
 }
 
+function insertBookmark($data)
+{
+
+	$query = "INSERT INTO `bookmarks`(`blog_id`, `bookmarked_by`) VALUES ('".$data['blog_id']."','".$data['bookmarked_by']."');";
+	
+	try
+	{
+		execute($query);
+
+		return true;
+	}
+	
+	catch(Exception $e)
+	{
+		throw $e->getMessage();
+		return false;
+	}	
+}
+
 ?>
