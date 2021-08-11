@@ -94,10 +94,57 @@ function getBlogByID($data)
 	}
 }
 
+function getBlogByIDandOwnerID($data, $by)
+{
+	$result=array();
+	$result = null;
+	try
+	{
+		$query = "SELECT * FROM `blogs` WHERE `id`='$data' AND `blogged_by`='$by';";
+	
+		$result=get($query);
+		
+		if($result != null)
+		{
+			return $result;
+		}
+		
+		else
+		{
+			return $result;
+		}
+	}
+	
+	catch(Exception $e)
+	{
+		throw $e->getMessage();
+		return $result;
+	}
+}
+
 function insertBlog($data)
 {
 
 	$query = "INSERT INTO `blogs`(`title`, `content`, `category_id`, `blogstatus_id`, `blogged_by`) VALUES ('".$data['title']."','".$data['content']."','".$data['category_id']."','".$data['blogstatus_id']."','".$data['blogged_by']."');";
+	
+	try
+	{
+		execute($query);
+
+		return true;
+	}
+	
+	catch(Exception $e)
+	{
+		throw $e->getMessage();
+		return false;
+	}	
+}
+
+function updateMyBlog($data)
+{
+
+	$query = "UPDATE `blogs` SET `title`='".$data["title"]."',`content`='".$data["content"]."', `category_id`='".$data["category_id"]."' WHERE `id` = '".$data["id"]."' AND `blogged_by` = '".$data["blogged_by"]."';";
 	
 	try
 	{
