@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-setcookie("userInfo",$_COOKIE["userInfo"],time()-3600,"/");
+setcookie("userInfo",$_COOKIE["userInfo"],time()-(20 * 365 * 24 * 60 * 60),"/");
 unset($_COOKIE["userInfo"]);
 
 session_destroy();

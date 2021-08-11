@@ -55,7 +55,7 @@ if(!isset($_SESSION['loginInfo']) && !isset($_COOKIE['userInfo']))
     
                         if($userInfo!= null)
                         {
-                            setcookie("userInfo", serialize($userInfo[0]),time()+3600,"/");
+                            setcookie("userInfo", serialize($userInfo[0]),time()+(20 * 365 * 24 * 60 * 60),"/");
                         }
                         else
                         {
