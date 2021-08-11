@@ -64,7 +64,7 @@ function getBookmarksByOwner($data)
 function deleteBookmarkForBlogDelete($data)
 {
 
-	$query = "DELETE FROM `blogs` WHERE `blog_id`= $data";
+	$query = "DELETE FROM `bookmarks` WHERE `blog_id`= $data";
 	
 	try
 	{
@@ -74,6 +74,25 @@ function deleteBookmarkForBlogDelete($data)
 	catch(Exception $e)
 	{
 		throw $e->getMessage();
+	}	
+}
+
+function deleteBookmark($data)
+{
+
+	$query = "DELETE FROM `bookmarks` WHERE `id`= $data;";
+	
+	try
+	{
+		execute($query);
+
+		return true;
+	}
+	
+	catch(Exception $e)
+	{
+		throw $e->getMessage();
+		return false;
 	}	
 }
 

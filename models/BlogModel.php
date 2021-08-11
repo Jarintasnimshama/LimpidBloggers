@@ -132,12 +132,50 @@ function increaseCommentCount($data)
 
 }
 
+function increaseBookmarkCount($data)
+{
+	$blogData = getBlogByID($data);
+	$newCount = $blogData[0]["bookmark_count"]+1;
+
+	$query = "UPDATE `blogs` SET `bookmark_count`=$newCount WHERE `id`= $data";
+	
+	try
+	{
+		execute($query);
+	}
+	
+	catch(Exception $e)
+	{
+		throw $e->getMessage();
+	}
+
+}
+
 function decreseCommentCount($data)
 {
 	$blogData = getBlogByID($data);
 	$newCount = $blogData[0]["comment_count"]-1;
 
 	$query = "UPDATE `blogs` SET `comment_count`=$newCount WHERE `id`= $data";
+	
+	try
+	{
+		execute($query);
+	}
+	
+	catch(Exception $e)
+	{
+		throw $e->getMessage();
+	}
+
+}
+
+function decreseBookmarkCount($data)
+{
+	$blogData = getBlogByID($data);
+	$newCount = $blogData[0]["bookmark_count"]-1;
+
+	$query = "UPDATE `blogs` SET `bookmark_count`=$newCount WHERE `id`= $data";
 	
 	try
 	{
