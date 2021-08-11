@@ -46,7 +46,7 @@ function loadBlog($id)
                 $content .=                '<a class="linkBtn1" href="https://localhost/LimpidBloggers/views/Common/Blog.php?id='.$data["id"].'">ADD TO BOOKMARK</a>';
                 $content .=            '</center>';
             }
-            $content .=            '<span class="blogContent">'.$data["content"].'</span>';
+            $content .=            '<span class="blogContent" style="text-align: justify;">'.$data["content"].'</span>';
             $content .=            '<br>';
             $content .=            '<p class="blogTime">'.$data["post_time"].' ('.$data["category"].')</p>';
             $content .=        '</div>';

@@ -50,7 +50,7 @@ include "../../controllers/BlogController.php";
                     ?>
                 </div>
                 <center>
-                    <table class="table1">
+                    <table class="table3">
                         <tbody>
                             <?php loadComments($id); ?>
                         </tbody>

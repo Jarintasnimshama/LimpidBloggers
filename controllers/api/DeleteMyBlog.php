@@ -2,6 +2,8 @@
 session_start();
 
 require_once '../../models/BlogModel.php';
+require_once '../../models/CommentModel.php';
+require_once '../../models/BookmarkModel.php';
 
 $id = $_GET['id'];
 
