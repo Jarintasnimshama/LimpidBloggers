@@ -14,7 +14,7 @@ function loadApprovedBlogs()
             $content .= '<center>';
             $content .=        '<div class="blogsDiv">';
             $content .=            '<h1 class="blogTitle">'.$data["title"].'</h1>';
-            $content .=            '<p class="blogSub">By- <a class="ancorText2" href="https://localhost/LimpidBloggers/views/Blogger/BloggerProfile.php?id='.$data["blogged_by"].'">'.$data["blogger_name"].'</a></p>';
+            $content .=            '<p class="blogSub">By- <a class="ancorText3" href="https://localhost/LimpidBloggers/views/Blogger/BloggerProfile.php?id='.$data["blogged_by"].'">'.$data["blogger_name"].'</a></p>';
             $content .=            '<span class="blogContent">'.substr($data["content"], 0, 550).'....</span>';
             $content .=            '<br>';
             $content .=            '<center>';

@@ -39,7 +39,7 @@ function loadBlog($id)
             $content .= '<center>';
             $content .=        '<div class="blogsDiv">';
             $content .=            '<h1 class="blogTitle">'.$data["title"].'</h1>';
-            $content .=            '<p class="blogSub">By- <a class="ancorText2" href="https://localhost/LimpidBloggers/views/Blogger/BloggerProfile.php?id='.$data["blogged_by"].'">'.$data["blogger_name"].'</a></p>';
+            $content .=            '<p class="blogSub">By- <a class="ancorText3" href="https://localhost/LimpidBloggers/views/Blogger/BloggerProfile.php?id='.$data["blogged_by"].'">'.$data["blogger_name"].'</a></p>';
             if($_SESSION["loginInfo"]["usertype_id"]==3 && !$checkBook && $data["blogger_id"] != unserialize($_COOKIE["userInfo"])["id"])
             {
                 $content .=            '<center>';
