@@ -22,7 +22,7 @@ if(isset($_SESSION['loginInfo']) && isset($_COOKIE['userInfo']) && $_SESSION['lo
 
     if(!$urlValidate)
     {
-        header("Location: http://localhost/LimpidBloggers/views/Common/SignIn.php");
+        header("Location: https://localhost/LimpidBloggers/views/Common/SignIn.php");
     }
     else
     {
@@ -31,16 +31,16 @@ if(isset($_SESSION['loginInfo']) && isset($_COOKIE['userInfo']) && $_SESSION['lo
             deleteCommentForBlogDelete($id);
             deleteBookmarkForBlogDelete($id);
             deleteBlog($id);
-            header("Location: http://localhost/LimpidBloggers/views/Blogger/BloggerProfile.php?id=".unserialize($_COOKIE["userInfo"])["id"]);
+            header("Location: https://localhost/LimpidBloggers/views/Blogger/BloggerProfile.php?id=".unserialize($_COOKIE["userInfo"])["id"]);
         }
         else
         {
-            header("Location: http://localhost/LimpidBloggers/views/Common/SignIn.php");
+            header("Location: https://localhost/LimpidBloggers/views/Common/SignIn.php");
         }
     }
 }
 else
 {
-    header("Location: http://localhost/LimpidBloggers/views/Common/SignIn.php");
+    header("Location: https://localhost/LimpidBloggers/controllers/api/Logout.php");
 }
 ?>

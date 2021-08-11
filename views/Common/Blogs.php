@@ -6,15 +6,15 @@ include "../../controllers/BlogsController.php";
     <head>
         <title>LimpidBlogger | Blogs</title>
 
-        <link rel="icon" href="http://localhost/LimpidBloggers/assets/image/Project Icon/LimpidBloggers.ico">
+        <link rel="icon" href="https://localhost/LimpidBloggers/assets/image/Project Icon/LimpidBloggers.ico">
 
         <!-- Adding External CSS -->
-        <link rel="stylesheet" href="http://localhost/LimpidBloggers/assets/css/navigationbar.css">
-        <link rel="stylesheet" href="http://localhost/LimpidBloggers/assets/css/divs.css">
-        <link rel="stylesheet" href="http://localhost/LimpidBloggers/assets/css/texts.css">
-        <link rel="stylesheet" href="http://localhost/LimpidBloggers/assets/css/forms.css">
-        <link rel="stylesheet" href="http://localhost/LimpidBloggers/assets/css/buttons.css">
-        <link rel="stylesheet" href="http://localhost/LimpidBloggers/assets/css/tables.css">
+        <link rel="stylesheet" href="https://localhost/LimpidBloggers/assets/css/navigationbar.css">
+        <link rel="stylesheet" href="https://localhost/LimpidBloggers/assets/css/divs.css">
+        <link rel="stylesheet" href="https://localhost/LimpidBloggers/assets/css/texts.css">
+        <link rel="stylesheet" href="https://localhost/LimpidBloggers/assets/css/forms.css">
+        <link rel="stylesheet" href="https://localhost/LimpidBloggers/assets/css/buttons.css">
+        <link rel="stylesheet" href="https://localhost/LimpidBloggers/assets/css/tables.css">
 
         <!-- Adding External JS -->
     </head>

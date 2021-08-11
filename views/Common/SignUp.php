@@ -6,15 +6,15 @@ include "../../controllers/SignUpController.php";
     <head>
         <title>LimpidBlogger | Registration</title>
 
-        <link rel="icon" href="http://localhost/LimpidBloggers/assets/image/Project Icon/LimpidBloggers.ico">
+        <link rel="icon" href="https://localhost/LimpidBloggers/assets/image/Project Icon/LimpidBloggers.ico">
 
         <!-- Adding External CSS -->
-        <link rel="stylesheet" href="http://localhost/LimpidBloggers/assets/css/navigationbar.css">
-        <link rel="stylesheet" href="http://localhost/LimpidBloggers/assets/css/divs.css">
-        <link rel="stylesheet" href="http://localhost/LimpidBloggers/assets/css/texts.css">
-        <link rel="stylesheet" href="http://localhost/LimpidBloggers/assets/css/forms.css">
-        <link rel="stylesheet" href="http://localhost/LimpidBloggers/assets/css/buttons.css">
-        <link rel="stylesheet" href="http://localhost/LimpidBloggers/assets/css/tables.css">
+        <link rel="stylesheet" href="https://localhost/LimpidBloggers/assets/css/navigationbar.css">
+        <link rel="stylesheet" href="https://localhost/LimpidBloggers/assets/css/divs.css">
+        <link rel="stylesheet" href="https://localhost/LimpidBloggers/assets/css/texts.css">
+        <link rel="stylesheet" href="https://localhost/LimpidBloggers/assets/css/forms.css">
+        <link rel="stylesheet" href="https://localhost/LimpidBloggers/assets/css/buttons.css">
+        <link rel="stylesheet" href="https://localhost/LimpidBloggers/assets/css/tables.css">
 
         <!-- Adding External JS -->
         <script src="http://localhost/LimpidBloggers/assets/js/SignUpJS.js"></script>
@@ -57,7 +57,7 @@ include "../../controllers/SignUpController.php";
                         <span class="error"><?php echo $msg; ?></span>
                         <span class="success"><?php echo $success; ?></span>
                         <br>
-                        <span class="message1">Already have an account? <a class="ancorText" href="http://localhost/LimpidBloggers/views/Common/SignIn.php">Click Here</a><span>
+                        <span class="message1">Already have an account? <a class="ancorText" href="https://localhost/LimpidBloggers/views/Common/SignIn.php">Click Here</a><span>
                         <button type="submit" name="registerBTN" id="registerBTN" class="btnReg" onclick="return validateRegistration()"><b>REGISTER</b></button>
                     </div>
                </center>

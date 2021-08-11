@@ -6,18 +6,18 @@ include "../../controllers/SignInController.php";
     <head>
         <title>LimpidBlogger | Login</title>
 
-        <link rel="icon" href="http://localhost/LimpidBloggers/assets/image/Project Icon/LimpidBloggers.ico">
+        <link rel="icon" href="https://localhost/LimpidBloggers/assets/image/Project Icon/LimpidBloggers.ico">
 
         <!-- Adding External CSS -->
-        <link rel="stylesheet" href="http://localhost/LimpidBloggers/assets/css/navigationbar.css">
-        <link rel="stylesheet" href="http://localhost/LimpidBloggers/assets/css/divs.css">
-        <link rel="stylesheet" href="http://localhost/LimpidBloggers/assets/css/texts.css">
-        <link rel="stylesheet" href="http://localhost/LimpidBloggers/assets/css/forms.css">
-        <link rel="stylesheet" href="http://localhost/LimpidBloggers/assets/css/buttons.css">
-        <link rel="stylesheet" href="http://localhost/LimpidBloggers/assets/css/tables.css">
+        <link rel="stylesheet" href="https://localhost/LimpidBloggers/assets/css/navigationbar.css">
+        <link rel="stylesheet" href="https://localhost/LimpidBloggers/assets/css/divs.css">
+        <link rel="stylesheet" href="https://localhost/LimpidBloggers/assets/css/texts.css">
+        <link rel="stylesheet" href="https://localhost/LimpidBloggers/assets/css/forms.css">
+        <link rel="stylesheet" href="https://localhost/LimpidBloggers/assets/css/buttons.css">
+        <link rel="stylesheet" href="https://localhost/LimpidBloggers/assets/css/tables.css">
 
         <!-- Adding External JS -->
-        <script src="http://localhost/LimpidBloggers/assets/js/SignInJS.js"></script>
+        <script src="https://localhost/LimpidBloggers/assets/js/SignInJS.js"></script>
     </head>
 
     <body>
@@ -34,7 +34,7 @@ include "../../controllers/SignInController.php";
                             <input type="password" name="passwordTB" id="passwordTB" class="inputText1" placeholder="Password" value="<?php echo $data["password"]; ?>">
                             <span class="error"><?php echo $msg; ?></span>
                             <br>
-                            <span class="message1">Don't have any account? <a class="ancorText" href="http://localhost/LimpidBloggers/views/Common/SignUp.php">Click Here</a><span>
+                            <span class="message1">Don't have any account? <a class="ancorText" href="https://localhost/LimpidBloggers/views/Common/SignUp.php">Click Here</a><span>
                             <button type="submit" name="loginBTN" id="loginBTN" class="btnLogin" onclick="return validateLogin()"><b>LOGIN</b></button>
                         </div>
                 </center>

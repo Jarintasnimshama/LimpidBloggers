@@ -1,10 +1,10 @@
 <ul class="navbar">
   <li class="navitem" style="float: left;">
-    <a href="http://localhost/LimpidBloggers/views/Common/Home.php"><b>LimpidBlogger</b></a>
+    <a href="https://localhost/LimpidBloggers/views/Common/Home.php"><b>LimpidBlogger</b></a>
   </li>
   
-  <li class="navitem" style="padding-right: 2.5vw;"><a href="http://localhost/LimpidBloggers/views/Common/SignIn.php">Login</a></li>
-  <li class="navitem"><a href="http://localhost/LimpidBloggers/views/Common/SignUp.php">Registration</a></li>
+  <li class="navitem" style="padding-right: 2.5vw;"><a href="https://localhost/LimpidBloggers/views/Common/SignIn.php">Login</a></li>
+  <li class="navitem"><a href="https://localhost/LimpidBloggers/views/Common/SignUp.php">Registration</a></li>
   <li class="navitem dropdown">
     <a href="javascript:void(0)" class="dropbtn">Support</a>
     <div class="dropdown-content">

@@ -82,7 +82,7 @@ if(!isset($_SESSION['loginInfo']) && !isset($_COOKIE['userInfo']))
                         }
                     }
     
-                    header("Location: http://localhost/LimpidBloggers/views/Common/Blogs.php");
+                    header("Location: https://localhost/LimpidBloggers/views/Common/Blogs.php");
                 }
             }
         }

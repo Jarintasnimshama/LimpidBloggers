@@ -7,5 +7,5 @@ unset($_COOKIE["userInfo"]);
 session_destroy();
 unset($_SESSION["loginInfo"]);
 
-header("Location: http://localhost/LimpidBloggers/");
+header("Location: https://localhost/LimpidBloggers/");
 ?>
