@@ -32,6 +32,37 @@ function getAllBlogsByBlogStatus($data)
 	}
 }
 
+function getAllReadableBlogByCategory($data)
+{
+	$result=array();
+	$result = null;
+	try
+	{
+		$query = "SELECT blogs.*, categories.category as category, bloggers.name as blogger_name FROM `blogs` ";
+		$query .= "INNER JOIN `categories` ON blogs.category_id = categories.id ";
+		$query .= "INNER JOIN `bloggers`ON blogs.blogged_by = bloggers.id ";
+		$query .= "WHERE blogs.`category_id`='".$data."' AND blogs.`blogstatus_id`='3' ORDER BY post_time DESC;";
+	
+		$result=get($query);
+		
+		if($result != null)
+		{
+			return $result;
+		}
+		
+		else
+		{
+			return $result;
+		}
+	}
+	
+	catch(Exception $e)
+	{
+		throw $e->getMessage();
+		return $result;
+	}
+}
+
 function getReadableBlog($id, $status)
 {
 	$result=array();

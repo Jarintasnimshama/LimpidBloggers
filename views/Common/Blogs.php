@@ -17,6 +17,7 @@ include "../../controllers/BlogsController.php";
         <link rel="stylesheet" href="https://localhost/LimpidBloggers/assets/css/tables.css">
 
         <!-- Adding External JS -->
+        <script src="http://localhost/LimpidBloggers/assets/js/BlogsJS.js"></script>
     </head>
 
     <body>
@@ -45,10 +46,16 @@ include "../../controllers/BlogsController.php";
                             echo '<a class="linkBtn2" href="http://localhost/LimpidBloggers/views/Blogger/PostBlog.php">Post New Blog</a>';
                         } 
                    ?>
+                   <select name="category"  id="category" class="inputText1" onchange="search();">
+                        <option value="">All Blogs</option>
+                        <?php renderCategories(); ?>
+                    </select>
                 </div>
-                <?php
-                    loadApprovedBlogs();
-                ?>
+                <div id="blogs">
+                    <?php
+                        loadApprovedBlogs();
+                    ?>
+                </div>
             </div>
         </form>
     </body>
