@@ -36,8 +36,8 @@ include "../../controllers/MyBookmarksController.php";
                         <thead>
                             <th>#</th>
                             <th>Title</th>
-                            <th>Genre</th>
                             <th>Blogger</th>
+                            <th>Genre</th>
                             <th>Post Time</th>
                             <th></th>
                         </thead>
