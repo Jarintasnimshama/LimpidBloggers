@@ -46,6 +46,12 @@ function loadBlog($id)
                 $content .=                '<a class="linkBtn1" href="https://localhost/LimpidBloggers/views/Common/Blog.php?id='.$data["id"].'">ADD TO BOOKMARK</a>';
                 $content .=            '</center>';
             }
+            if($_SESSION["loginInfo"]["usertype_id"]==3 && $checkBook && $data["blogger_id"] != unserialize($_COOKIE["userInfo"])["id"])
+            {
+                $content .=            '<center>';
+                $content .=                '<a class="linkBtn5" href="#">BOOKMARKED</a>';
+                $content .=            '</center>';
+            }
             $content .=            '<span class="blogContent" style="text-align: justify;">'.$data["content"].'</span>';
             $content .=            '<br>';
             $content .=            '<p class="blogTime">'.$data["post_time"].' ('.$data["category"].')</p>';

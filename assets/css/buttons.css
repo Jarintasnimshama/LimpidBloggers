@@ -146,3 +146,17 @@
 .linkBtn4:hover, .linkBtn4:active {
     background-color: #700202;
 }
+
+.linkBtn5:link, .linkBtn5:visited {
+    background-color: #c99c09;
+    color: white;
+    padding: 4px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.linkBtn5:hover, .linkBtn5:active {
+    background-color: #b68d08;;
+}
