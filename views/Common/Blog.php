@@ -17,6 +17,7 @@ include "../../controllers/BlogController.php";
         <link rel="stylesheet" href="https://localhost/LimpidBloggers/assets/css/tables.css">
 
         <!-- Adding External JS -->
+        <script src="http://localhost/LimpidBloggers/assets/js/BlogJS.js"></script>
     </head>
 
     <body>
