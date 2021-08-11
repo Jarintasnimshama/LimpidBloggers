@@ -20,7 +20,7 @@ function loadApprovedBlogs()
             $content .=            '<center>';
             $content .=                '<a class="linkBtn1" href="https://localhost/LimpidBloggers/views/Common/Blog.php?id='.$data["id"].'">Read Full Blog</a>';
             $content .=            '</center>';
-            $content .=            '<p class="blogTime">'.$data["post_time"].' ('.$data["category"].')</p>';
+            $content .=            '<p class="blogTime">'.$data["post_time"].' (<i style="color:#15ad01;">'.$data["category"].'</i>)</p>';
             $content .=        '</div>';
             $content .='</center>';	
         }

@@ -54,7 +54,7 @@ function loadBlog($id)
             }
             $content .=            '<span class="blogContent" style="text-align: justify;">'.$data["content"].'</span>';
             $content .=            '<br>';
-            $content .=            '<p class="blogTime">'.$data["post_time"].' ('.$data["category"].')</p>';
+            $content .=            '<p class="blogTime">'.$data["post_time"].' (<i style="color:#15ad01;">'.$data["category"].'</i>)</p>';
             $content .=        '</div>';
             $content .='</center>';	
         }
