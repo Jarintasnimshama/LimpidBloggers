@@ -39,15 +39,23 @@ include "../../controllers/BlogController.php";
 
             <div class="remainDiv2">
                 <div style="padding-top: 1vh;"></div>
-                <?php
-                    loadBlog($id);
+                <div style="width: 100%;">
+                    <?php
+                        loadBlog($id);
 
-                    if($_SESSION['loginInfo']['usertype_id'] == 3)
-                    {
-                        include "../Blogger/CommentSection.php";
-                    }
-                ?>
-                
+                        if($_SESSION['loginInfo']['usertype_id'] == 3)
+                        {
+                            include "../Blogger/CommentSection.php";
+                        }
+                    ?>
+                </div>
+                <center>
+                    <table class="table1">
+                        <tbody>
+                            <?php loadComments($id); ?>
+                        </tbody>
+                    </table>
+                </center>
             </div>
         </form>
     </body>

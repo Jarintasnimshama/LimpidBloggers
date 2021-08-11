@@ -69,6 +69,49 @@
     color: rgb(0, 65, 139);
 }
 
+.ancorText3:link {
+    color: rgb(7, 101, 207);
+    text-decoration: none;
+}
+.ancorText3:visited {
+    color: rgb(7, 101, 207);
+    text-decoration: none;
+}
+.ancorText3:hover {
+    color: rgb(0, 65, 139);
+    text-decoration: none;
+}
+.ancorText3:active {
+    color: rgb(0, 65, 139);
+    text-decoration: none;
+}
+
+.ancorText4:link {
+    background-color: rgb(207, 7, 7);
+    color: white;
+    text-decoration: none;
+    padding: 4px 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+}
+.ancorText4:visited {
+    background-color: rgb(207, 7, 7);
+    color: white;
+    text-decoration: none;
+}
+.ancorText4:hover {
+    background-color: rgb(168, 3, 3);
+    color: white;
+    text-decoration: none;
+}
+.ancorText4:active {
+    background-color: rgb(168, 3, 3);
+    color: white;
+    text-decoration: none;
+}
+
 .message1{
     text-decoration: wavy;
     font-family: 'Times New Roman', Times, serif;
