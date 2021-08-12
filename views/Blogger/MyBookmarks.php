@@ -17,6 +17,7 @@ include "../../controllers/MyBookmarksController.php";
         <link rel="stylesheet" href="https://localhost/LimpidBloggers/assets/css/tables.css">
 
         <!-- Adding External JS -->
+        <script src="https://localhost/LimpidBloggers/assets/js/MyBookmarksJS.js"></script>
     </head>
 
     <body>

@@ -8,7 +8,7 @@ $id = $_GET['id'];
 
 $urlValidate = true;
 
-$allData = loadBookmarkByIDandOwnerID($id, unserialize($_COOKIE['userInfo'])['id']);
+$allData = loadBookmarkByIDandOwnerID(unserialize($_COOKIE['userInfo'])['id'], $id);
 
 if(isset($_SESSION['loginInfo']) && isset($_COOKIE['userInfo']) && $_SESSION['loginInfo']['usertype_id'] == 3)
 {
@@ -16,7 +16,7 @@ if(isset($_SESSION['loginInfo']) && isset($_COOKIE['userInfo']) && $_SESSION['lo
     {
         $urlValidate = false;
     }
-    if (!isset($_GET['id'])) 
+    if(!isset($_GET['id'])) 
     {
         $urlValidate = false;
     }
@@ -30,6 +30,7 @@ if(isset($_SESSION['loginInfo']) && isset($_COOKIE['userInfo']) && $_SESSION['lo
         if($allData[0]["bookmarked_by"] == unserialize($_COOKIE['userInfo'])['id'])
         {
             $execution = deleteBookmark($id);
+
             if($execution)
             {
                 decreseBookmarkCount($allData[0]["blog_id"]);

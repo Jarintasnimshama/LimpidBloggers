@@ -20,7 +20,7 @@ function loadMyBookmarks()
             $content .=        '<td>'.$data["post_time"].'</td>';
             $content .=        '<td align="middle">';
             $content .=             '<a class="linkBtn1" href="https://localhost/LimpidBloggers/views/Common/Blog.php?id='.$data["blog_id"].'">View Blog</a>&nbsp;';
-            $content .=             '<a class="linkBtn4" href="https://localhost/LimpidBloggers/controllers/api/DeleteMyBookmark.php?id='.$data["id"].'">Remove</a>';
+            $content .=             '<a class="linkBtn4" onclick="return confirm_delete();" href="https://localhost/LimpidBloggers/controllers/api/DeleteMyBookmark.php?id='.$data["id"].'">Remove</a>';
             $content .=        '</td>';
             $content .='</tr>';	
             $Sl += 1;

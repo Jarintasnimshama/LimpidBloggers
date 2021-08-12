@@ -71,7 +71,7 @@ function loadBookmarkByIDandOwnerID($data, $id)
 		$query .= "INNER JOIN `blogs` ON bookmarks.blog_id = blogs.id ";
 		$query .= "INNER JOIN `categories` ON blogs.category_id = categories.id ";
 		$query .= "INNER JOIN `bloggers`ON blogs.blogged_by = bloggers.id ";
-		$query .= "WHERE bookmarks.`bookmarked_by`='$data' AND bookmarks.`bookmarked_by`='$id';";
+		$query .= "WHERE bookmarks.`bookmarked_by`='$data' AND bookmarks.`id`='$id';";
 	
 		$result=get($query);
 		
