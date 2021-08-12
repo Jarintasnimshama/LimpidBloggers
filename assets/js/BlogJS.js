@@ -17,3 +17,8 @@ function validateComment()
 
     return validate;
 }
+
+function confirm_delete()
+{
+    return confirm("Are you sure?");
+}

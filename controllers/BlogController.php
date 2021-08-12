@@ -82,7 +82,7 @@ function loadComments($id)
             $content .= '<td>'.$data["comment_time"].'</td>';
             if($_SESSION["loginInfo"]["usertype_id"] == 3 && $data["commenter_id"] == unserialize($_COOKIE["userInfo"])["id"])
             {
-                $content .= '<td><a class="ancorText4" href="https://localhost/LimpidBloggers/controllers/api/DeleteMyComment.php?blogid='.$data["blog_id"].'&commentid='.$data["id"].'">Delete</a></td>';
+                $content .= '<td><a class="ancorText4" onclick="return confirm_delete();" href="https://localhost/LimpidBloggers/controllers/api/DeleteMyComment.php?blogid='.$data["blog_id"].'&commentid='.$data["id"].'">Delete</a></td>';
             }
             $content .='</tr>';	
         }
