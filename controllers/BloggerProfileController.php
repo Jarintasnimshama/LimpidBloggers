@@ -76,14 +76,14 @@ function loadBloggersPostsMyPanel()
                 $content .=        '<td align="middle">';
                 $content .=                '<a class="linkBtn1" href="https://localhost/LimpidBloggers/views/Common/Blog.php?id='.$data["blog_id"].'">View Blog</a>&nbsp;';
                 $content .=                '<a class="linkBtn3" href="https://localhost/LimpidBloggers/views/Blogger/UpdateMyBlog.php?id='.$data["blog_id"].'">Update</a>&nbsp';
-                $content .=                '<a class="linkBtn4" href="https://localhost/LimpidBloggers/controllers/api/DeleteMyBlog.php?id='.$data["blog_id"].'">Delete</a>';
+                $content .=                '<a class="linkBtn4" onclick="return confirm_delete();" href="https://localhost/LimpidBloggers/controllers/api/DeleteMyBlog.php?id='.$data["blog_id"].'">Delete</a>';
                 $content .=        '</td>';
             }
             else
             {
                 $content .=        '<td align="middle">';
                 $content .=                '<a class="linkBtn3" href="https://localhost/LimpidBloggers/views/Blogger/UpdateMyBlog.php?id='.$data["blog_id"].'">Update</a>&nbsp';
-                $content .=                '<a class="linkBtn4" href="https://localhost/LimpidBloggers/controllers/api/DeleteMyBlog.php?id='.$data["blog_id"].'">Delete</a>';
+                $content .=                '<a class="linkBtn4" onclick="return confirm_delete();" href="https://localhost/LimpidBloggers/controllers/api/DeleteMyBlog.php?id='.$data["blog_id"].'">Delete</a>';
                 $content .=        '</td>';
             }
             $content .='</tr>';	
