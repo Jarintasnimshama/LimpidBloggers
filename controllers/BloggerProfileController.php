@@ -27,7 +27,7 @@ function loadBloggersPosts()
                     $content .=        '<td>'.$data["title"].'</td>';
                     $content .=        '<td>'.$data["category"].'</td>';
                     $content .=        '<td>'.$data["post_time"].'</td>';
-                    $content .=        '<td>'.$data["blog_status"].'</td>';
+                    $content .=        '<td><span class="attenText1">'.$data["blog_status"].'</span></td>';
                     $content .=        '<td>'.$data["comment_count"].'</td>';
                     $content .=        '<td>'.$data["bookmark_count"].'</td>';
                     $content .=        '<td align="middle"><a class="linkBtn1" href="https://localhost/LimpidBloggers/views/Common/Blog.php?id='.$data["blog_id"].'">View Blog</a></td>';
@@ -68,7 +68,7 @@ function loadBloggersPostsMyPanel()
             $content .=        '<td>'.$data["title"].'</td>';
             $content .=        '<td>'.$data["category"].'</td>';
             $content .=        '<td>'.$data["post_time"].'</td>';
-            $content .=        '<td>'.$data["blog_status"].'</td>';
+            $content .=        '<td><span class="attenText1">'.$data["blog_status"].'</span></td>';
             $content .=        '<td>'.$data["comment_count"].'</td>';
             $content .=        '<td>'.$data["bookmark_count"].'</td>';
             if($data['blog_status'] == "Approved")
