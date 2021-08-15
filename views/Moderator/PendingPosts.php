@@ -1,3 +1,6 @@
+<?php
+include "../../controllers/PendingPostsController.php";
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -35,7 +38,7 @@
                                 <th></th>
                             </thead>
                             <tbody>
-                                
+                                <?php renderPendingPosts(); ?>
                             </tbody>
                         </table>
                     </center>

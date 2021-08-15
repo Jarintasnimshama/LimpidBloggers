@@ -191,6 +191,25 @@ function updateMyBlog($data)
 	}	
 }
 
+function updateMyBlogStatus($data, $id)
+{
+
+	$query = "UPDATE `blogs` SET `blogstatus_id`='".$data."' WHERE `id` = '".$id."';";
+	
+	try
+	{
+		execute($query);
+
+		return true;
+	}
+	
+	catch(Exception $e)
+	{
+		throw $e->getMessage();
+		return false;
+	}	
+}
+
 function increaseCommentCount($data)
 {
 	$blogData = getBlogByID($data);
