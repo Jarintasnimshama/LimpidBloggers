@@ -22,7 +22,7 @@
             <?php include "./navbar.php" ?>
 
             <div>
-                 Content
+                 Fontent
             </div>
         </form>
     </body>
