@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>LimpidBlogger | Moderator</title>
+        <title>LimpidBlogger | Pending Posts</title>
 
         <link rel="icon" href="https://localhost/LimpidBloggers/assets/image/Project Icon/LimpidBloggers.ico">
 
@@ -21,8 +21,24 @@
             <!-- Adding Moderator Navbar -->
             <?php include "./navbar.php" ?>
 
-            <div>
-                 Fontent
+            <div class="remainDiv2">
+                <div style="padding-top: 2vh;"></div>
+                    <center>
+                        <table class="table2">
+                            <thead>
+                                <th>#</th>
+                                <th>Title</th>
+                                <th>Genre</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                                <th>Post By</th>
+                                <th></th>
+                            </thead>
+                            <tbody>
+                                
+                            </tbody>
+                        </table>
+                    </center>
             </div>
         </form>
     </body>

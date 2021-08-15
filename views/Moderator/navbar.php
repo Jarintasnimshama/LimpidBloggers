@@ -16,7 +16,7 @@
   <!-- /Common Part -->
 
   <!-- ADD MODERATOR PAGES LINK HERE -->
-
+  <li class="navitem"><a href="https://localhost/LimpidBloggers/views/Moderator/PendingPosts.php">Pending Posts</a></li>
   
   <!-- /ADD MODERATOR PAGES LINK HERE -->
 </ul>
