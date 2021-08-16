@@ -3,8 +3,8 @@ M-> Models
 V-> Views
 C-> Controllers
 
-Models: It will contain all database related codes. Like: funtion of getting
-data from a perticular table or updating or deleting etc.
+Models: It will contain all database related codes. Like: function of getting
+data from a particular table or updating or deleting etc.
 In our case Model folder contains 11 files.
 10 files are the entity(tables) of the database. 1 file(DBC.php) for database connection, get and
 execute function. 
@@ -13,7 +13,7 @@ Views: It will contain web pages.
 In our case we have 4 additional folder inside view folder
 Folder Admin--> Only Admin Accessible pages.
 Moderator --> Only Moderator Accessible pages.
-Bloggers --> Some commonly accesssible pages and some bloggers accessible pages.
+Bloggers --> Some commonly accessible pages and some bloggers accessible pages.
 Common --> All commonly accessible page. (Login, Registration, Blogs etc)
 
 Controllers: Every page have its own controller. 
@@ -30,7 +30,7 @@ We have 2 more extra Folders rather then MVC.
 1. DB Backup
 	a. Database Diagrams: All database designs.
 	b. Backups: Database backup files.
-	c. Queries: Datbase creating queries
+	c. Queries: Database creating queries
 2. assets
 	a. css: all css markups
 	b. images: all images
