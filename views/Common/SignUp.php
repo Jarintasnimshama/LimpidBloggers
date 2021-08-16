@@ -31,8 +31,8 @@ include "../../controllers/SignUpController.php";
                     <div class="regDiv">
                         <h1 class="loginHeader">Sign Up</h1>
                         <input type="text" name="nameTB" id="nameTB" class="inputText1" placeholder="Full Name" value="<?php echo $dataBlogger['name']; ?>">
-                        <input type="text" class="inputText1" placeholder="Contact" value="+880" style="width: calc(15%);" readonly>
-                        <input type="text" name="contactTB" id="contactTB" class="inputText1" placeholder="1XXXXXXXXX" value="<?php echo $dataBlogger['contact']; ?>" style="width: calc(80%);">
+                        <input type="text" class="inputText1" placeholder="Contact" value="+880" style="width: calc(20%);" readonly>
+                        <input type="text" name="contactTB" id="contactTB" class="inputText1" placeholder="1XXXXXXXXX" value="<?php echo $dataBlogger['contact']; ?>" style="width: calc(75%);">
                         <input type="text" name="dateTB" id="dateTB" class="inputText1" value="<?php echo $dataBlogger['birth_date']; ?>" onfocus="(this.type='date')" onfocusout="(this.type='text')" placeholder="Date of Birth">
                         <select id="gender" name="gender" class="inputText1" style="width: calc(47.5%);">
                             <option value="">Select Gender</option>
