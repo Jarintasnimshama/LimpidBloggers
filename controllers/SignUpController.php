@@ -56,7 +56,7 @@ if(!isset($_SESSION['loginInfo']) && !isset($_COOKIE['userInfo']))
     {
         if(validateRegistration())
         {
-            $dataLogin = array("email"=>$_POST['emailTB'], "password"=>$_POST['passwordTB'], "usertype_id"=>"3", "regstatus_id"=>"1");
+            $dataLogin = array("email"=>$_POST['emailTB'], "password"=>$_POST['passwordTB'], "usertype_id"=>"3", "regstatus_id"=>"3");
             $dataBlogger = array("name"=>$_POST['nameTB'],  "contact"=>$_POST['contactTB'],  "blood_group"=>$_POST['bloodgroup'],  "gender"=>$_POST['gender'],  "birth_date"=>$_POST['dateTB'],  "login_id"=>"");
 
             if(emailExist($dataLogin["email"]))
@@ -77,7 +77,8 @@ if(!isset($_SESSION['loginInfo']) && !isset($_COOKIE['userInfo']))
 
                     if(insertBlogger($dataBlogger))
                     {
-                        $success = "Successfully Registered. Approval Required for Login.";
+                        // $success = "Successfully Registered. Approval Required for Login.";
+                        $success = "Successfully Registered. Login and Enjoy.";
                     }
                     else
                     {

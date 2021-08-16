@@ -6,5 +6,5 @@
  <br>
  ethen@gmail.com (Password: 12345) -->Moderator
  <br>
- shamab@gmail.com (Password: 12345) -->Blogger
+ shama@gmail.com (Password: 12345) -->Blogger
  <br>
